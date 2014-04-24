@@ -5,7 +5,7 @@
 import serial
 
 
-class OSC():
+class PG():
     def __init__(self, portname):
         self.serialport = serial.serial_for_url(portname, do_not_open=True)
         self.serialport.close()  # In case port is already open
